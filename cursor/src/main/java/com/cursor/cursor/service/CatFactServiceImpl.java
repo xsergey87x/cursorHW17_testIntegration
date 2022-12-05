@@ -2,6 +2,7 @@ package com.cursor.cursor.service;
 
 import com.cursor.cursor.responseModel.CatFactResponseModel;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -10,6 +11,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+@NoArgsConstructor
 @Service
 public class CatFactServiceImpl implements CatFactService {
     @Override

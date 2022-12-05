@@ -13,11 +13,6 @@ public class CursorApplication {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		SpringApplication.run(CursorApplication.class, args);
-
-		CatFactService catFactService = new CatFactServiceImpl();
-
-		System.out.println(catFactService.getCatFact().toString());
-
 	}
 
 }

@@ -8,6 +8,10 @@ public class CursorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursorApplication.class, args);
+
+
+
+
 	}
 
 }

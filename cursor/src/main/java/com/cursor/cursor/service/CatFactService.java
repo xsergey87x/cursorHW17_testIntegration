@@ -4,7 +4,7 @@ import com.cursor.cursor.responseModel.CatFactResponseModel;
 
 import java.io.IOException;
 
-public interface catFactService {
+public interface CatFactService {
 
     CatFactResponseModel getCatFact() throws IOException, InterruptedException;
 }

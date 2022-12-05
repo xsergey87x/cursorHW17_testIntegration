@@ -2,6 +2,7 @@ package com.cursor.cursor.service;
 
 import com.cursor.cursor.responseModel.CatFactResponseModel;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.URI;
@@ -9,7 +10,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class catFactServiceImpl implements catFactService{
+@Service
+public class CatFactServiceImpl implements CatFactService {
     @Override
     public CatFactResponseModel getCatFact() throws IOException, InterruptedException {
 

@@ -22,4 +22,14 @@ public class CatFactServiceImpl implements CatFactService {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(response.body(), CatFactResponseModel.class);
     }
+
+    @Override
+    public CatFactResponseModel getCatFact(String httpPropertyString) throws IOException, InterruptedException {
+        var httpClient = HttpClient.newHttpClient();
+        var request = HttpRequest.newBuilder(URI.create(httpPropertyString)).build();
+        var response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.readValue(response.body(), CatFactResponseModel.class);
+    }
 }

@@ -7,4 +7,6 @@ import java.io.IOException;
 public interface CatFactService {
 
     CatFactResponseModel getCatFact() throws IOException, InterruptedException;
+    CatFactResponseModel getCatFact(String httpPropertyString) throws IOException, InterruptedException;
+
 }

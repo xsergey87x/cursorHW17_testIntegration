@@ -13,6 +13,7 @@ public class CursorApplication {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		SpringApplication.run(CursorApplication.class, args);
+
 	}
 
 }

@@ -12,16 +12,16 @@ import java.io.IOException;
 @RequestMapping(value = "/")
 public class restController {
 
- private final CatFactService catFactService;
+    private final CatFactService catFactService;
 
- public restController(CatFactService catFactService) {
-  this.catFactService = catFactService;
- }
+    public restController(CatFactService catFactService) {
+        this.catFactService = catFactService;
+    }
 
- @GetMapping(value = "/getCatFact")
- public CatFactResponseModel getCatFact() throws IOException, InterruptedException {
-  return catFactService.getCatFact();
-}
+    @GetMapping(value = "/getCatFact")
+    public CatFactResponseModel getCatFact() throws IOException, InterruptedException {
+        return catFactService.getCatFact();
+    }
 
 
 }
